@@ -1,0 +1,10 @@
+{
+  "name": "cv-gen",
+  "packageManager": "yarn@4.4.1",
+  "dependencies": {
+    "@types/pdfmake": "^0.2.11",
+    "pdfmake": "^0.2.18",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
