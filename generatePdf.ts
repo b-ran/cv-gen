@@ -1,11 +1,9 @@
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
+// Libraries
 import PdfPrinter from 'pdfmake';
 import * as fs from 'fs';
 
+// Types
 import type { TDocumentDefinitions } from 'pdfmake/interfaces';
-
-// pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 const docDefinition: TDocumentDefinitions = {
     content: [
@@ -29,6 +27,11 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'item'
                         },
                         {
+                            text: 'b-ran.dev',
+                            link: 'https://b-ran.dev',
+                            style: 'item'
+                        },
+                        {
                             text: 'github.com/b-ran',
                             link: 'https://github.com/b-ran',
                             style: 'item'
@@ -44,13 +47,10 @@ const docDefinition: TDocumentDefinitions = {
             marginBottom: 10
         },
         {
-            text: 'A versatile software engineer who leverages diverse past experiences and honed problem-solving ' +
-                'techniques to develop innovative solutions across various technologies and frameworks. ' +
-                'Proficient in multiple programming languages and modern development practices, with a focus on ' +
-                'creating secure, efficient, and user-centric applications. Adept at applying lessons from previous ' +
-                'projects to overcome new challenges and optimize processes. Passionate about continuous learning and ' +
-                'thrives in collaborative environments, consistently contributing to team success through technical ' +
-                'expertise, creative thinking, and a commitment to code quality.'
+            text: `A software engineer who uses past experiences, problem-solving, and creativity to develop 
+            solutions across various technologies and frameworks. Proficient in multiple programming languages 
+            and modern development practices, I create clear, maintainable code and work closely with different 
+            teams to deliver results.`
         },
         {
             columns: [
@@ -71,8 +71,10 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             ul: [
-                                'Leading development of ANZ business insights platform, built with SvelteKit, Tailwind, ECharts, and Supabase. The platform provides industry data on spend and economic performance to ANZ\'s business customers through a responsive web app platform.',
-                                'Led development of Community Compass web platform, providing unique insights into New Zealand for councils and decision-makers across New Zealand. Collaborated with data scientists to develop a comprehensive data visualization tool, utilizing SvelteKit, Tailwind, and ECharts. The platform provides insights into New Zealand data, including demographics, businesses, and crime, helping customers make informed decisions.'								]
+                                'Designed the architecture and led the development of The Sauce, built with SvelteKit, Tailwind, ECharts, and Supabase. The platform provides industry data on spending and economic performance to ANZ business customers through a responsive web application. This enables ANZ business customers to make informed decisions based on data insights.',
+                                'Developed and designed a PDF report generation microservice that enables customers to generate reports across different DOT Loves Data platforms. Currently implemented in The Sauce, the service is built with Express.js and Puppeteer.',
+                                'Led the development of Community Compass, a web platform providing unique insights into New Zealand for councils and decision-makers nationwide. Collaborated with data scientists to develop a comprehensive data visualization tool using SvelteKit, Tailwind, and ECharts. The platform delivers insights on demographics, businesses, and crime statistics, helping customers make informed decisions.'
+                            ]
                         },
                         {
                             text: 'Software Engineer',
@@ -85,7 +87,6 @@ const docDefinition: TDocumentDefinitions = {
                         {
                             ul: [
                                 'Engineered secure data sharing software allowing customers to directly send data to DOT Loves Data via a Django upload interface that encrypts data with AES-256 at upload time, storing it in S3.',
-                                'Implemented the new design of the DOT Loves Data Django portal.',
                                 'Built and designed DOT Loves Data Restful API platform using FastAPI and Tortoise ORM.',
                                 'Deployed and maintained a Kubernetes cluster both on bare metal and AWS.',
                             ]
@@ -109,6 +110,25 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'h3'
                         },
                         {
+                            text: 'The Sauce',
+                            style: 'h4'
+                        },
+                        {
+                            text: 'Professional',
+                            style: 'subtitle'
+                        },
+                        {
+                            text: 'https://sauce.anz.co.nz/',
+                            decoration: 'underline',
+                            style: 'subtitle',
+                            link: 'https://sauce.anz.co.nz/',
+                        },
+                        {
+                            text: 'The Sauce is a web application that provides insights on spending and economic performance ' +
+                                'to ANZ business customers. Built with Svelte, SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
+                                'it was developed as a collaboration between DOT Loves Data and ANZ, involving developers, data science, data engineering, and design teams.'
+                        },
+                        {
                             text: 'Community Compass',
                             style: 'h4'
                         },
@@ -117,34 +137,34 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'subtitle'
                         },
                         {
-                            text: 'Public URL',
+                            text: 'https://hawkesbay.communitycompass.co.nz',
                             decoration: 'underline',
                             style: 'subtitle',
                             link: 'https://hawkesbay.communitycompass.co.nz',
                         },
                         {
-                            text: 'Created Community Compass, a web dashboard product utilizing New Zealand locational data, ' +
-                                'built with SvelteKit, Tailwind, and ECharts, interfacing with Snowflake for chart data. ' +
-                                'Collaborated closely with cross-functional teams at DOT Loves Data, including design and ' +
-                                'data science, to develop this comprehensive data visualization tool.'
+                            text: 'Community Compass is a web dashboard utilizing and presents a range of New Zealand locational data, ' +
+                                'built with Svelte, SvelteKit, Tailwind, and ECharts, interfacing with Snowflake for chart data. ' +
+                                'Collaborated closely with cross-functional teams at DOT Loves Data, including design, ' +
+                                'data science, and data engineering to develop this comprehensive data visualization tool.'
                         },
                         {
-                            text: 'NixOS Workstation Setup',
+                            text: 'NixOS Desktop',
                             style: 'h4'
                         },
                         {
-                            text: 'Open Source',
+                            text: 'Personal',
                             style: 'subtitle'
                         },
                         {
-                            text: 'Public URL',
+                            text: 'https://github.com/b-ran/dots',
                             decoration: 'underline',
                             style: 'subtitle',
                             link: 'https://github.com/b-ran/dots',
                         },
                         {
-                            text: 'Developed a NixOS flake configuration for my daily driver system, leveraging NixOS, ' +
-                                'Home-Manager, Agenix, and Stylix to manage the entire setup. The project showcases a fully ' +
+                            text: 'A personal NixOS flake to manage my linux desktop. leveraging NixOS, ' +
+                                'Home-Manager, Agenix, and Stylix to manage the system. The project showcases a fully ' +
                                 'customized Hyprland-based desktop environment with a range of packages and system components.'
                         }
                     ]
@@ -161,12 +181,13 @@ const docDefinition: TDocumentDefinitions = {
                         {
                             stack: [
                                 { text: 'Python/Java/Ruby', style: 'item' },
-                                { text: 'C/C#', style: 'item' },
                                 { text: 'JavaScript/TypeScript', style: 'item' },
                                 { text: 'Svelte/SvelteKit', style: 'item' },
+                                { text: 'Vitest/Playwright/Puppeteer', style: 'item' },
                                 { text: 'Django/Flask/FastAPI', style: 'item' },
                                 { text: 'React/React Native', style: 'item' },
-                                { text: 'Angular/Vue', style: 'item' },
+                                { text: 'Angular/Vue/Express.js', style: 'item' },
+                                { text: 'C/C#', style: 'item' },
                                 { text: 'PostgresSQL/Snowflake/Firebase/Supabase', style: 'item' },
                                 { text: 'GitHub/GitLab/Bitbucket/Jira', style: 'item' },
                                 { text: 'Docker/Kubernetes/Jenkins/GitHub Actions', style: 'item' },
@@ -229,7 +250,7 @@ const docDefinition: TDocumentDefinitions = {
         title: 'Brandon Scott-Hill CV',
         author: 'Brandon Scott-Hill',
         subject: 'CV for Brandon Scott-Hill',
-        keywords: 'CV Svelte SvelteKit Tailwind CSS Python Django FastAPI Kubernetes NixOS',
+        keywords: 'CV Svelte SvelteKit Tailwind Typescript Javascript CSS Python Django FastAPI Kubernetes Docker',
     },
 };
 
