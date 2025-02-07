@@ -180,18 +180,15 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             stack: [
-                                { text: 'Python/Java/Ruby', style: 'item' },
+                                { text: 'Python/Java', style: 'item' },
                                 { text: 'JavaScript/TypeScript', style: 'item' },
                                 { text: 'Svelte/SvelteKit', style: 'item' },
                                 { text: 'Vitest/Playwright/Puppeteer', style: 'item' },
                                 { text: 'Django/Flask/FastAPI', style: 'item' },
-                                { text: 'React/React Native', style: 'item' },
-                                { text: 'Angular/Vue/Express.js', style: 'item' },
-                                { text: 'C/C#', style: 'item' },
+                                { text: 'React/Angular/Vue/Express.js', style: 'item' },
                                 { text: 'PostgresSQL/Snowflake/Firebase/Supabase', style: 'item' },
                                 { text: 'GitHub/GitLab/Bitbucket/Jira', style: 'item' },
                                 { text: 'Docker/Kubernetes/Jenkins/GitHub Actions', style: 'item' },
-                                { text: 'Nix/NixOS' }
                             ]
                         },
                         {
