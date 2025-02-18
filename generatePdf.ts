@@ -47,10 +47,7 @@ const docDefinition: TDocumentDefinitions = {
             marginBottom: 10
         },
         {
-            text: `A software engineer who uses past experiences, problem-solving, and creativity to develop 
-            solutions across various technologies and frameworks. Proficient in multiple programming languages 
-            and modern development practices, I create clear, maintainable code and work closely with different 
-            teams to deliver results.`
+            text: `A software engineer who uses past experiences and creativity to solve problems and produce results. Proficient in multiple programming languages, frameworks, and development practices, I create clear, maintainable code and work closely with different teams to deliver results.`
         },
         {
             columns: [
@@ -70,11 +67,15 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'subtitle'
                         },
                         {
-                            ul: [
-                                'Designed the architecture and led the development of The Sauce, built with SvelteKit, Tailwind, ECharts, and Supabase. The platform provides industry data on spending and economic performance to ANZ business customers through a responsive web application. This enables ANZ business customers to make informed decisions based on data insights.',
+                            ul: [ // Combine platform development together
+                                 // Statement about been a lead dev what that entails
+                                // Microservice print charming statement
+                                // Add more spacing between the points
+                                'Designed the architecture and led the development of The Sauce, built with SvelteKit, Tailwind, ECharts, and Supabase.',
                                 'Developed and designed a PDF report generation microservice that enables customers to generate reports across different DOT Loves Data platforms. Currently implemented in The Sauce, the service is built with Express.js and Puppeteer.',
-                                'Led the development of Community Compass, a web platform providing unique insights into New Zealand for councils and decision-makers nationwide. Collaborated with data scientists to develop a comprehensive data visualization tool using SvelteKit, Tailwind, and ECharts. The platform delivers insights on demographics, businesses, and crime statistics, helping customers make informed decisions.'
-                            ]
+                                'Led the development of Community Compass. Collaborated with data scientists to develop a comprehensive data visualization tool using SvelteKit, Tailwind, and ECharts. The platform delivers insights on demographics, businesses, and crime statistics, helping customers make informed decisions.'
+                            ],
+                            style: 'list'
                         },
                         {
                             text: 'Software Engineer',
@@ -89,7 +90,8 @@ const docDefinition: TDocumentDefinitions = {
                                 'Engineered secure data sharing software allowing customers to directly send data to DOT Loves Data via a Django upload interface that encrypts data with AES-256 at upload time, storing it in S3.',
                                 'Built and designed DOT Loves Data Restful API platform using FastAPI and Tortoise ORM.',
                                 'Deployed and maintained a Kubernetes cluster both on bare metal and AWS.',
-                            ]
+                            ],
+                            style: 'list'
                         },
                         {
                             text: 'Junior Software Engineer',
@@ -103,7 +105,8 @@ const docDefinition: TDocumentDefinitions = {
                             ul: [
                                 'Worked with Django and Vue frontend, developing new features for Publons users in an agile setting.',
                                 'Developed an end-to-end testing system integrated with the deployment pipeline. Tests ran on EC2 instances in a Selenium grid with Docker.'
-                            ]
+                            ],
+                            style: 'list'
                         },
                         {
                             text: 'Projects',
@@ -125,8 +128,9 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             text: 'The Sauce is a web application that provides insights on spending and economic performance ' +
-                                'to ANZ business customers. Built with Svelte, SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
-                                'it was developed as a collaboration between DOT Loves Data and ANZ, involving developers, data science, data engineering, and design teams.'
+                                'to ANZ business customers enabling customers to make informed decisions based on data insights. Built with Svelte, SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
+                                'it was developed as a collaboration between DOT Loves Data and ANZ, involving developers, data science, data engineering, and design teams.',
+                            marginBottom: 10
                         },
                         {
                             text: 'Community Compass',
@@ -148,25 +152,6 @@ const docDefinition: TDocumentDefinitions = {
                                 'Collaborated closely with cross-functional teams at DOT Loves Data, including design, ' +
                                 'data science, and data engineering to develop this comprehensive data visualization tool.'
                         },
-                        {
-                            text: 'NixOS Desktop',
-                            style: 'h4'
-                        },
-                        {
-                            text: 'Personal',
-                            style: 'subtitle'
-                        },
-                        {
-                            text: 'https://github.com/b-ran/dots',
-                            decoration: 'underline',
-                            style: 'subtitle',
-                            link: 'https://github.com/b-ran/dots',
-                        },
-                        {
-                            text: 'A personal NixOS flake to manage my linux desktop. leveraging NixOS, ' +
-                                'Home-Manager, Agenix, and Stylix to manage the system. The project showcases a fully ' +
-                                'customized Hyprland-based desktop environment with a range of packages and system components.'
-                        }
                     ]
 
                 },
@@ -189,7 +174,8 @@ const docDefinition: TDocumentDefinitions = {
                                 { text: 'PostgresSQL/Snowflake/Firebase/Supabase', style: 'item' },
                                 { text: 'GitHub/GitLab/Bitbucket/Jira', style: 'item' },
                                 { text: 'Docker/Kubernetes/Jenkins/GitHub Actions', style: 'item' },
-                            ]
+                            ],
+                            style: 'skills'
                         },
                         {
                             text: 'Education',
@@ -227,12 +213,12 @@ const docDefinition: TDocumentDefinitions = {
             fontSize: 14,
             bold: true,
             marginTop: 10,
+            marginBottom: 10,
             color: '#54B689'
         },
         h4: {
             fontSize: 12,
             bold: true,
-            marginTop: 10
         },
         subtitle: {
             fontSize: 9,
@@ -240,6 +226,13 @@ const docDefinition: TDocumentDefinitions = {
         },
         item: {
             marginBottom: 5
+        },
+        list: {
+            lineHeight: 1.4,
+            marginBottom: 10
+        },
+        skills: {
+            lineHeight: 1.4
         }
     },
 
