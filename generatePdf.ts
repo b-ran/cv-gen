@@ -47,7 +47,7 @@ const docDefinition: TDocumentDefinitions = {
             marginBottom: 10
         },
         {
-            text: `A software engineer who uses past experiences and creativity to solve problems and produce results. Proficient in multiple programming languages, frameworks, and development practices, I create clear, maintainable code and work closely with different teams to deliver results.`
+            text: `Results-driven software engineer who uses past experiences and creativity to solve problems with expertise across  programming languages, frameworks, and development practices. Proven track record of creating maintainable, scalable solutions. Experienced in working in cross-functional teams and leading development projects.`,
         },
         {
             columns: [
@@ -67,14 +67,13 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'subtitle'
                         },
                         {
-                            ul: [ // Combine platform development together
-                                 // Statement about been a lead dev what that entails
-                                // Microservice print charming statement
-                                // Add more spacing between the points
-                                'Designed the architecture and led the development of The Sauce, built with SvelteKit, Tailwind, ECharts, and Supabase.',
-                                'Developed and designed a PDF report generation microservice that enables customers to generate reports across different DOT Loves Data platforms. Currently implemented in The Sauce, the service is built with Express.js and Puppeteer.',
-                                'Led the development of Community Compass. Collaborated with data scientists to develop a comprehensive data visualization tool using SvelteKit, Tailwind, and ECharts. The platform delivers insights on demographics, businesses, and crime statistics, helping customers make informed decisions.'
+                            ul: [
+                                'Worked as lead developer responsible for solving complex problems, making technical decisions, and designing the architecture of our web platforms.',
+                                'Developed and designed a PDF report generation microservice that enables customers to generate reports across different web platforms. Built with Express.js and Puppeteer.',
+                                'Designed the architecture and led the development of The Sauce web app, new platform for ANZ Bank for business customers to visualize insights on spending and economic performance. Built with SvelteKit, Tailwind, ECharts, Supabase, and AWS.',
+                                'Lead development of creating web platform for DOT Loves Data\'s Community Compass dataset. Made using SvelteKit, Tailwind, ECharts, and Kubernetes.'
                             ],
+                            marginBottom: 10,
                             style: 'list'
                         },
                         {
@@ -87,10 +86,11 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             ul: [
-                                'Engineered secure data sharing software allowing customers to directly send data to DOT Loves Data via a Django upload interface that encrypts data with AES-256 at upload time, storing it in S3.',
-                                'Built and designed DOT Loves Data Restful API platform using FastAPI and Tortoise ORM.',
+                                'Developed encrypted data pipeline in Django enabling secure client data uploads, implementing real-time stream encryption and AWS S3 storage integration. Reducing data handling risks while streamlining customer onboarding processes.',
+                                'Built and designed DOT Loves Data Rest API using Python and FastAPI.',
                                 'Deployed and maintained a Kubernetes cluster both on bare metal and AWS.',
                             ],
+                            marginBottom: 10,
                             style: 'list'
                         },
                         {
@@ -103,8 +103,8 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             ul: [
-                                'Worked with Django and Vue frontend, developing new features for Publons users in an agile setting.',
-                                'Developed an end-to-end testing system integrated with the deployment pipeline. Tests ran on EC2 instances in a Selenium grid with Docker.'
+                                'Worked in a team of developers using with Django and Vue, developing new features for users.',
+                                'Developed an e2e testing system and integrating with the current deployment pipeline. Running on a EC2 instances in a Selenium grid with Docker.'
                             ],
                             style: 'list'
                         },
@@ -128,7 +128,7 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             text: 'The Sauce is a web application that provides insights on spending and economic performance ' +
-                                'to ANZ business customers enabling customers to make informed decisions based on data insights. Built with Svelte, SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
+                                'to ANZ business customers enabling customers to make informed decisions based on data insights. Built with SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
                                 'it was developed as a collaboration between DOT Loves Data and ANZ, involving developers, data science, data engineering, and design teams.',
                             marginBottom: 10
                         },
@@ -147,8 +147,8 @@ const docDefinition: TDocumentDefinitions = {
                             link: 'https://hawkesbay.communitycompass.co.nz',
                         },
                         {
-                            text: 'Community Compass is a web dashboard utilizing and presents a range of New Zealand locational data, ' +
-                                'built with Svelte, SvelteKit, Tailwind, and ECharts, interfacing with Snowflake for chart data. ' +
+                            text: 'Community Compass is a web application that collates and visualizes data from across New Zealand to help community organizations make data-driven decisions. ' +
+                                'built with  SvelteKit, Tailwind, ECharts, and Snowflake.' +
                                 'Collaborated closely with cross-functional teams at DOT Loves Data, including design, ' +
                                 'data science, and data engineering to develop this comprehensive data visualization tool.'
                         },
@@ -229,7 +229,6 @@ const docDefinition: TDocumentDefinitions = {
         },
         list: {
             lineHeight: 1.4,
-            marginBottom: 10
         },
         skills: {
             lineHeight: 1.4
