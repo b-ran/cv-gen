@@ -12,8 +12,8 @@ const docDefinition: TDocumentDefinitions = {
                 {
                     width: '80%',
                     stack: [
-                        { text: 'Brandon Scott-Hill', style: 'h1' },
-                        { text: 'Lead Developer', style: 'h2' }
+                        {text: 'Brandon Scott-Hill', style: 'h1'},
+                        {text: 'Lead Developer', style: 'h2'}
                     ]
                 },
                 {
@@ -47,7 +47,7 @@ const docDefinition: TDocumentDefinitions = {
             marginBottom: 10
         },
         {
-            text: `Results-driven software engineer who uses past experiences and creativity to solve problems with expertise across  programming languages, frameworks, and development practices. Proven track record of creating maintainable, scalable solutions. Experienced in working in cross-functional teams and leading development projects.`,
+            text: 'Results-driven software engineer leveraging experience and creativity to solve complex problems across various programming languages, frameworks, and development practices. Proven track record of building maintainable, scalable solutions and leading cross-functional development teams.'
         },
         {
             columns: [
@@ -63,7 +63,7 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'h4'
                         },
                         {
-                            text: 'DOT Loves Data | 2023 - Present',
+                            text: 'Dot Loves Data | 2023 - Present',
                             style: 'subtitle'
                         },
                         {
@@ -71,7 +71,7 @@ const docDefinition: TDocumentDefinitions = {
                                 'Worked as lead developer responsible for solving complex problems, making technical decisions, and designing the architecture of our web platforms.',
                                 'Developed and designed a PDF report generation microservice that enables customers to generate reports across different web platforms. Built with Express.js and Puppeteer.',
                                 'Designed the architecture and led the development of The Sauce web app, new platform for ANZ Bank for business customers to visualize insights on spending and economic performance. Built with SvelteKit, Tailwind, ECharts, Supabase, and AWS.',
-                                'Lead development of creating web platform for DOT Loves Data\'s Community Compass dataset. Made using SvelteKit, Tailwind, ECharts, and Kubernetes.'
+                                'Lead development of creating web platform for Dot Loves Data\'s Community Compass dataset. Made using SvelteKit, Tailwind, ECharts, and Kubernetes.'
                             ],
                             marginBottom: 10,
                             style: 'list'
@@ -81,13 +81,13 @@ const docDefinition: TDocumentDefinitions = {
                             style: 'h4'
                         },
                         {
-                            text: 'DOT Loves Data | 2020 - 2023',
+                            text: 'Dot Loves Data | 2020 - 2023',
                             style: 'subtitle'
                         },
                         {
                             ul: [
                                 'Developed encrypted data pipeline in Django enabling secure client data uploads, implementing real-time stream encryption and AWS S3 storage integration. Reducing data handling risks while streamlining customer onboarding processes.',
-                                'Built and designed DOT Loves Data Rest API using Python and FastAPI.',
+                                'Built and designed Dot Loves Data Rest API using Python and FastAPI.',
                                 'Deployed and maintained a Kubernetes cluster both on bare metal and AWS.',
                             ],
                             marginBottom: 10,
@@ -128,8 +128,7 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             text: 'The Sauce is a web application that provides insights on spending and economic performance ' +
-                                'to ANZ business customers enabling customers to make informed decisions based on data insights. Built with SvelteKit, Tailwind, ECharts, Supabase, AWS, and Snowflake, ' +
-                                'it was developed as a collaboration between DOT Loves Data and ANZ, involving developers, data science, data engineering, and design teams.',
+                                'to ANZ business customers enabling customers to make informed decisions based on data insights. Built with SvelteKit, Tailwind, ECharts, Supabase, and AWS. This project was a collaboration between Dot Loves Data and ANZ, involving developers, data science, data engineering, and design teams.',
                             marginBottom: 10
                         },
                         {
@@ -148,14 +147,14 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             text: 'Community Compass is a web application that collates and visualizes data from across New Zealand to help community organizations make data-driven decisions. ' +
-                                'built with  SvelteKit, Tailwind, ECharts, and Snowflake.' +
-                                'Collaborated closely with cross-functional teams at DOT Loves Data, including design, ' +
+                                'built with  SvelteKit, Tailwind, and ECharts, and Snowflake. ' +
+                                'Collaborated closely with cross-functional teams at Dot Loves Data, including design, ' +
                                 'data science, and data engineering to develop this comprehensive data visualization tool.'
                         },
                     ]
 
                 },
-                { width: '5%', stack: [] },
+                {width: '5%', stack: []},
                 {
                     width: '20%',
                     stack: [
@@ -165,15 +164,15 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             stack: [
-                                { text: 'Python/Java', style: 'item' },
-                                { text: 'JavaScript/TypeScript', style: 'item' },
-                                { text: 'Svelte/SvelteKit', style: 'item' },
-                                { text: 'Vitest/Playwright/Puppeteer', style: 'item' },
-                                { text: 'Django/Flask/FastAPI', style: 'item' },
-                                { text: 'React/Angular/Vue/Express.js', style: 'item' },
-                                { text: 'PostgresSQL/Snowflake/Firebase/Supabase', style: 'item' },
-                                { text: 'GitHub/GitLab/Bitbucket/Jira', style: 'item' },
-                                { text: 'Docker/Kubernetes/Jenkins/GitHub Actions', style: 'item' },
+                                {text: 'Python/Java', style: 'item'},
+                                {text: 'JavaScript/TypeScript', style: 'item'},
+                                {text: 'Svelte/SvelteKit', style: 'item'},
+                                {text: 'Vitest/Playwright/Puppeteer', style: 'item'},
+                                {text: 'Django/Flask/FastAPI', style: 'item'},
+                                {text: 'React/Angular/Vue/Express.js', style: 'item'},
+                                {text: 'PostgresSQL/Snowflake/Firebase/Supabase', style: 'item'},
+                                {text: 'GitHub/GitLab/Bitbucket/Jira', style: 'item'},
+                                {text: 'Docker/Kubernetes/Jenkins/GitHub Actions', style: 'item'},
                             ],
                             style: 'skills'
                         },
@@ -183,9 +182,9 @@ const docDefinition: TDocumentDefinitions = {
                         },
                         {
                             stack: [
-                                { text: 'BE with Honours in Software Engineering', style: 'item' },
-                                { text: 'Victoria University of Wellington', style: 'item' },
-                                { text: '2016-2019', style: 'item' }
+                                {text: 'BE with Honours in Software Engineering', style: 'item'},
+                                {text: 'Victoria University of Wellington', style: 'item'},
+                                {text: '2016-2019', style: 'item'}
                             ]
                         }
                     ]
