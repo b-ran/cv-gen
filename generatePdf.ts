@@ -65,9 +65,9 @@ const docDefinition: TDocumentDefinitions = {
         },
         {
             ul: [
-                'Led the development of a first-of-its-kind economic insights platform for New Zealand\'s largest bank using SvelteKit, Tailwind, and AWS, creating a strategic tool that differentiated ANZ from competitors',
-                'Led the development of Community Compass, a custom web platform using SvelteKit, Tailwind, AWS, and Django, reversing customer attrition by delivering New Zealand\'s most comprehensive location-based insights tool',
-                'Engineered a PDF generation microservice using Express.js and Puppeteer that solved the challenge of duplicating chart components across platforms, enabling data reports that use existing components and automatically caching outputs to AWS S3, which reduced report development time for projects like "The Sauce" and eliminated cross-platform consistency issues',
+                'Led the development of a first-of-its-kind economic insights platform for New Zealand\'s largest bank using SvelteKit, Tailwind, and AWS, creating a tool that\'s unique in banking that differentiates ANZ from competitors',
+                'Led the development of Community Compass, an insights web platform using SvelteKit, Tailwind, AWS, and Python Django backend, delivering New Zealand\'s most comprehensive location-based insights tool that helps inform local government decisions and community planning',
+                'Engineered a PDF generation API microservice that converts HTML to PDFs using Express.js and Puppeteer, eliminating cross-browser print-to-PDF consistency issues and allowed us to reuse in-app component for PDF reports, reducing PDF report development time for projects like "The Sauce"',
                 'Directed technical strategy and architecture decisions as Lead Developer, establishing best practices and technical standards across multiple web platforms, resulting in efficient development workflows and consistent delivery of client-focused data visualization solutions',
             ],
             margin: [0, 0, 0, 10],
@@ -94,7 +94,8 @@ const docDefinition: TDocumentDefinitions = {
             ul: [
                 'Developed an end-to-end encrypted data pipeline in Python using Django, enabling secure client data uploads through a user-friendly web interface, implementing byte-level processing and real-time stream encryption to AWS S3, reducing data handling risks while improving customer onboarding processes with a solution so secure that even Dot Loves Data could not access client information without their explicit key sharing',
                 'Architected and implemented Dot Loves Data\'s first REST API using Python and FastAPI, expanding the company\'s data delivery capabilities beyond traditional dashboards and enabling customers to programmatically access and integrate critical business insights directly into their own applications and workflows',
-                'Implemented and maintained Kubernetes infrastructure across both AWS cloud and bare metal environments, establishing the company\'s standard deployment platform that improved scalability and reduced deployment time'
+                'Implemented and maintained Kubernetes infrastructure across both AWS cloud and bare metal environments, establishing the company\'s standard deployment platform that improved scalability and reduced deployment time',
+                'Spearheaded the implementation of a Jenkins CI/CD environment after identifying critical gaps in pipeline scheduling capabilities, enabling automated data processing workflows that significantly reduced manual intervention requirements and enhanced the reliability of company-wide data operations',
             ],
             margin: [0, 0, 0, 10],
             style: 'list'
@@ -118,8 +119,8 @@ const docDefinition: TDocumentDefinitions = {
         },
         {
             ul: [
-                'Contributed to a large-scale academic platform serving over 3 million users as part of a development team, developing features using Django and Vue within established agile workflows, gaining expertise in collaborative development practices while delivering code that met high quality standards for a production environment with significant user traffic',
-                'Designed and implemented an end-to-end testing system at Publons that integrated with the existing deployment pipeline, utilizing Docker containers on EC2 instances in a Selenium grid configuration, which strengthened the quality assurance process and reduced production issues for the platform serving over 3 million academic users'
+                'Contributed to a large-scale academic platform serving over 3 million users as part of a development team, developing features in Python using Django and Vue within established agile workflows, gaining expertise in collaborative development practices while delivering code that met high quality standards for a production environment with significant user traffic',
+                'Designed and implemented an end-to-end testing system at Publons that integrated with the existing Jenkins pipelines, utilizing Docker containers on EC2 instances in a Selenium grid configuration, which strengthened the quality assurance process and reduced production issues for the platform serving over 3 million academic users'
             ],
             margin: [0, 0, 0, 15],
             style: 'list'
@@ -189,7 +190,22 @@ const docDefinition: TDocumentDefinitions = {
                 },
                 {
                     width: '*',
-                    text: 'AWS, Docker, Kubernetes, PostgresSQL, Supabase',
+                    text: 'AWS, Docker, Kubernetes, Helm, PostgresSQL, Supabase',
+                    margin: [0, 5, 0, 0]
+                }
+            ]
+        },
+        {
+            columns: [
+                {
+                    width: 150,
+                    text: 'CI/CD:',
+                    style: 'skillCategory',
+                    margin: [0, 5, 0, 0]
+                },
+                {
+                    width: '*',
+                    text: 'Jenkins, Bitbucket Pipelines, GitHub Actions',
                     margin: [0, 5, 0, 0]
                 }
             ]
