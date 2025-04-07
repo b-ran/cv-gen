@@ -94,7 +94,7 @@ const docDefinition: TDocumentDefinitions = {
             ul: [
                 'Developed an end-to-end encrypted data pipeline in Python using Django, enabling secure client data uploads through a user-friendly web interface, implementing byte-level processing and real-time stream encryption to AWS S3, reducing data handling risks while improving customer onboarding processes with a solution so secure that even Dot Loves Data could not access client information without their explicit key sharing',
                 'Architected and implemented Dot Loves Data\'s first REST API using Python and FastAPI, expanding the company\'s data delivery capabilities beyond traditional dashboards and enabling customers to programmatically access and integrate critical business insights directly into their own applications and workflows',
-                'Implemented and maintained Kubernetes infrastructure across both AWS cloud and bare metal environments, establishing the company\'s standard deployment platform that improved scalability and reduced deployment time',
+                'Implemented and maintained Kubernetes and Helm infrastructure across both AWS cloud and bare metal environments, establishing the company\'s standard deployment platform that improved scalability and reduced deployment time',
                 'Spearheaded the implementation of a Jenkins CI/CD environment after identifying critical gaps in pipeline scheduling capabilities, enabling automated data processing workflows that significantly reduced manual intervention requirements and enhanced the reliability of company-wide data operations',
             ],
             margin: [0, 0, 0, 10],
