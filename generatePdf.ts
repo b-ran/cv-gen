@@ -28,7 +28,9 @@ const docDefinition: TDocumentDefinitions = {
                                 {text: ' | '},
                                 {text: 'b-ran.dev', link: 'https://b-ran.dev'},
                                 {text: ' | '},
-                                {text: 'github.com/b-ran', link: 'https://github.com/b-ran'}
+                                {text: 'github.com/b-ran', link: 'https://github.com/b-ran'},
+                                {text: ' | '},
+                                {text: '+640277666505', link: 'tel:+640277666505'},
                             ]
                         }
                     ]
@@ -65,10 +67,10 @@ const docDefinition: TDocumentDefinitions = {
         },
         {
             ul: [
-                'Led the development of a first-of-its-kind economic insights platform for New Zealand\'s largest bank using SvelteKit, Tailwind, and AWS, creating a tool that\'s unique in banking that differentiates ANZ from competitors',
-                'Led the development of Community Compass, an insights web platform using SvelteKit, Tailwind, AWS, and Python Django backend, delivering New Zealand\'s most comprehensive location-based insights tool that helps inform local government decisions and community planning',
-                'Engineered a PDF generation API microservice that converts HTML to PDFs using Express.js and Puppeteer, eliminating cross-browser print-to-PDF consistency issues and allowed us to reuse in-app component for PDF reports, reducing PDF report development time for projects like "The Sauce"',
-                'Directed technical strategy and architecture decisions as Lead Developer, establishing best practices and technical standards across multiple web platforms, resulting in efficient development workflows and consistent delivery of client-focused data visualization solutions',
+                'Led the development of The Sauce, an economic insights platform for New Zealand\'s largest bank ANZ, unique in banking that differentiates ANZ from competitors. Calls data from Snowflake with SQL then transforms the data in SvelteKit while caching the data in Redis to present the data in Svelte components and ECharts visualizations. Implemented a Supabase backend handling both standard email authentication and enterprise SSO integration, allowing ANZ staff to seamlessly login with their Microsoft accounts',
+                'Lead developer on Community Compass, a location-based insights platform for community decisions making. Built in SvelteKit and Tailwind, works by calling data insights from Snowflake with SQL and transforming the data with a data transformation middleware using Svelte stores as a local cache to be used by ECharts visualizations. Makes use of Django as a backend both to authenticate users and model data describing page views and visualizations',
+                'Engineered a PDF generation API microservice that converts HTML to PDFs using Express.js and Puppeteer, eliminating cross-browser print-to-PDF consistency issues and allowing us to reuse in-app components for PDF reports. Works by calling a REST endpoint with a target web URL where a headless Chrome instance in a Docker container opens that URL and generates a PDF using Puppeteer\'s PDF API',
+                'Directed technical strategy and architecture decisions as Lead Developer for Community Compass and The Sauce projects. Establishing best practices and technical standards across our web platforms, resulting in efficient development workflows and consistent delivery of client-focused data visualization solutions',
             ],
             margin: [0, 0, 0, 10],
             style: 'list'
@@ -92,10 +94,9 @@ const docDefinition: TDocumentDefinitions = {
         },
         {
             ul: [
-                'Developed an end-to-end encrypted data pipeline in Python using Django, enabling secure client data uploads through a user-friendly web interface, implementing byte-level processing and real-time stream encryption to AWS S3, reducing data handling risks while improving customer onboarding processes with a solution so secure that even Dot Loves Data could not access client information without their explicit key sharing',
-                'Architected and implemented Dot Loves Data\'s first REST API using Python and FastAPI, expanding the company\'s data delivery capabilities beyond traditional dashboards and enabling customers to programmatically access and integrate critical business insights directly into their own applications and workflows',
-                'Implemented and maintained Kubernetes and Helm infrastructure across both AWS cloud and bare metal environments, establishing the company\'s standard deployment platform that improved scalability and reduced deployment time',
-                'Spearheaded the implementation of a Jenkins CI/CD environment after identifying critical gaps in pipeline scheduling capabilities, enabling automated data processing workflows that significantly reduced manual intervention requirements and enhanced the reliability of company-wide data operations',
+                'Developed an end-to-end encrypted file sharing tool as part of our web platform using Python and Django, where file upload byte streams are encrypted using pycryptodome with AES-256 encryption before storing them in AWS S3. Engineered a custom file download stream where each download byte is decrypted, and in the case of multiple files, modified to chain files into a single zip file byte structure',
+                'Architected REST API platform using Python, allowing us to serve data insights programmatically. Implemented using FastAPI to create endpoints, SQL querying data from snowflake, and JWT tokens to authenticate users',
+                'Implemented and maintained physical server Kubernetes cluster using k3s and AWS cloud Kubernetes cluster using kops, now use as our infrastructure backend for our internal services and web apps. Created deployment workflows with Helm charts for web apps like Community Compass for both staging and production environments',
             ],
             margin: [0, 0, 0, 10],
             style: 'list'
@@ -119,8 +120,8 @@ const docDefinition: TDocumentDefinitions = {
         },
         {
             ul: [
-                'Contributed to a large-scale academic platform serving over 3 million users as part of a development team, developing features in Python using Django and Vue within established agile workflows, gaining expertise in collaborative development practices while delivering code that met high quality standards for a production environment with significant user traffic',
-                'Designed and implemented an end-to-end testing system at Publons that integrated with the existing Jenkins pipelines, utilizing Docker containers on EC2 instances in a Selenium grid configuration, which strengthened the quality assurance process and reduced production issues for the platform serving over 3 million academic users'
+                'Worked primarily in Python with Django and Vue.js at Publons as a Junior Software Engineer. Developed features like magic links to unsubscribe from email notifications by leveraging Django\'s authentication system and email backend. Worked within established agile workflows while collaborating with other developers',
+                'Implemented an end-to-end testing system at Publons by modifying the existing Jenkins pipelines to run browser automation tests by utilizing Docker containers on EC2 instances via a Selenium grid configuration. Strengthened the quality assurance process for a platform serving 3 million users'
             ],
             margin: [0, 0, 0, 15],
             style: 'list'
