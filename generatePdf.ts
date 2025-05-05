@@ -68,9 +68,9 @@ const docDefinition: TDocumentDefinitions = {
         {
             ul: [
                 'Led the development of The Sauce, an economic insights platform for New Zealand\'s largest bank ANZ, unique in banking that differentiates ANZ from competitors. Calls data from Snowflake with SQL then transforms the data in SvelteKit while caching the data in Redis to present the data in Svelte components and ECharts visualizations. Implemented a Supabase backend handling both standard email authentication and enterprise SSO integration, allowing ANZ staff to seamlessly login with their Microsoft accounts',
-                'Lead developer on Community Compass, a location-based insights platform for community decisions making. Built in SvelteKit and Tailwind, works by calling data insights from Snowflake with SQL and transforming the data with a data transformation middleware using Svelte stores as a local cache to be used by ECharts visualizations. Makes use of Django as a backend both to authenticate users and model data describing page views and visualizations',
+                'Lead developer on Community Compass, a location-based insights platform for community decision making. Built in SvelteKit and Tailwind, works by calling data insights from Snowflake with SQL and transforming the data with a data transformation middleware using Svelte stores as a local cache to be used by ECharts visualizations. Makes use of Django as a backend both to authenticate users and model data describing page views and visualizations',
                 'Engineered a PDF generation API microservice that converts HTML to PDFs using Express.js and Puppeteer, eliminating cross-browser print-to-PDF consistency issues and allowing us to reuse in-app components for PDF reports. Works by calling a REST endpoint with a target web URL where a headless Chrome instance in a Docker container opens that URL and generates a PDF using Puppeteer\'s PDF API',
-                'Directed technical strategy and architecture decisions as Lead Developer for Community Compass and The Sauce projects. Establishing best practices and technical standards across our web platforms, resulting in efficient development workflows and consistent delivery of client-focused data visualization solutions',
+                'Directed technical strategy and architecture decisions as Lead Developer for Community Compass and The Sauce projects. Established best practices and technical standards across our web platforms, resulting in efficient development workflows and consistent delivery of client-focused data visualization solutions',
             ],
             margin: [0, 0, 0, 10],
             style: 'list'
@@ -95,8 +95,8 @@ const docDefinition: TDocumentDefinitions = {
         {
             ul: [
                 'Developed an end-to-end encrypted file sharing tool as part of our web platform using Python and Django, where file upload byte streams are encrypted using pycryptodome with AES-256 encryption before storing them in AWS S3. Engineered a custom file download stream where each download byte is decrypted, and in the case of multiple files, modified to chain files into a single zip file byte structure',
-                'Architected REST API platform using Python, allowing us to serve data insights programmatically. Implemented using FastAPI to create endpoints, SQL querying data from snowflake, and JWT tokens to authenticate users',
-                'Implemented and maintained physical server Kubernetes cluster using k3s and AWS cloud Kubernetes cluster using kops, now use as our infrastructure backend for our internal services and web apps. Created deployment workflows with Helm charts for web apps like Community Compass for both staging and production environments',
+                'Architected REST API platform using Python, allowing us to serve data insights programmatically. Implemented using FastAPI to create endpoints, SQL querying data from Snowflake, and JWT tokens to authenticate users',
+                'Implemented and maintained physical server Kubernetes cluster using k3s and AWS cloud Kubernetes cluster using kops, now used as our infrastructure backend for our internal services and web apps. Created deployment workflows with Helm charts for web apps like Community Compass for both staging and production environments',
             ],
             margin: [0, 0, 0, 10],
             style: 'list'
