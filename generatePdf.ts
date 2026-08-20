@@ -1,5 +1,5 @@
 // Libraries
-import PdfPrinter from 'pdfmake';
+import pdfMake from 'pdfmake';
 import * as fs from 'fs';
 
 // Types
@@ -287,7 +287,10 @@ const fonts = {
     },
 };
 
-const printer = new PdfPrinter(fonts);
-const pdfDoc = printer.createPdfKitDocument(docDefinition);
-pdfDoc.pipe(fs.createWriteStream('Brandon_Scott-Hill_CV.pdf'));
-pdfDoc.end();
+pdfMake.setFonts(fonts);
+pdfMake.setUrlAccessPolicy(() => false);
+pdfMake.setLocalAccessPolicy(() => true);
+pdfMake.createPdf(docDefinition).getStream().then((pdfDoc) => {
+    pdfDoc.pipe(fs.createWriteStream('Brandon_Scott-Hill_CV.pdf'));
+    pdfDoc.end();
+});

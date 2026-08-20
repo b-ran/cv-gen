@@ -1,12 +1,12 @@
 {
   "name": "cv-gen",
   "dependencies": {
-    "@types/pdfmake": "^0.2.11",
-    "pdfmake": "^0.2.18",
+    "@types/pdfmake": "^0.3.3",
+    "pdfmake": "^0.3.11",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.9.3"
   },
-    "scripts": {
-        "pdf": "ts-node generatePdf.ts"
-    }
+  "scripts": {
+    "pdf": "ts-node generatePdf.ts"
+  }
 }
