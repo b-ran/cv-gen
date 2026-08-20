@@ -11,7 +11,7 @@ generate a consistently formatted PDF document.
 ## Prerequisites
 
 - Node.js (v14 or later recommended)
-- Yarn (v4.4.1 or compatible)
+- pnpm
 
 ## Installation
 
@@ -23,7 +23,7 @@ generate a consistently formatted PDF document.
 
 2. Install dependencies:
    ```
-   yarn install
+   pnpm install
    ```
 
 ## Usage
@@ -32,7 +32,7 @@ generate a consistently formatted PDF document.
 
 2. Generate your CV:
    ```
-   yarn pdf
+   pnpm pdf
    ```
 
 3. Find your generated PDF in the project root directory (e.g., `Brandon_Scott-Hill_CV.pdf`).
