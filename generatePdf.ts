@@ -21,26 +21,49 @@ const docDefinition: TDocumentDefinitions = {
             {
               alignment: "center",
               style: "contactInfo",
-              margin: [0, 0, 0, 20],
+              margin: [0, 0, 0, 2],
               text: [
+                { text: "+61 0480 580 953" },
+                { text: " | " },
                 {
                   text: "bran.scotthill@gmail.com",
-                  link: "mailto:name@gmail.com",
+                  link: "mailto:bran.scotthill@gmail.com",
+                },
+                { text: " | " },
+                { text: "Melbourne, VIC" },
+                { text: " | " },
+                { text: "NZ citizen - full AU work rights" },
+              ],
+            },
+            {
+              alignment: "center",
+              style: "contactInfo",
+              margin: [0, 0, 0, 10],
+              text: [
+                {
+                  text: "linkedin.com/in/b-ran",
+                  link: "https://linkedin.com/in/b-ran",
                 },
                 { text: " | " },
                 { text: "b-ran.dev", link: "https://b-ran.dev" },
                 { text: " | " },
-                { text: "github.com/b-ran", link: "https://github.com/b-ran" },
-                { text: " | " },
-                { text: "Based: Melbourne Australia" },
-                { text: " | " },
-                { text: "NZ citizen full AU work rights" },
+                {
+                  text: "github.com/b-ran",
+                  link: "https://github.com/b-ran",
+                },
               ],
             },
           ],
         },
         { width: "*", text: "" },
       ],
+    },
+
+    // Personal statement
+    {
+      text: "Software engineer with 7 years of professional experience building data-heavy web platforms from zero to production, owning stack decisions end to end. Have led development teams in my last two roles.",
+      style: "summary",
+      margin: [0, 0, 0, 5],
     },
 
     // Experience section
@@ -71,11 +94,12 @@ const docDefinition: TDocumentDefinitions = {
     },
     {
       ul: [
-        "Technical lead across Dot's greenfield web platforms. Chose the full stack (SvelteKit, backend, testing and charting libraries, AWS infrastructure), defined the code review process and quality standards, and led two developers from zero to production.",
-        "The Sauce by ANZ™ greenfield business insights platform turning anonymized card spend, demographic and property data into reports for ANZ's business customers. ~300 internal users; delivered zero to production in six months and still ANZ's live product today.",
-        "Community Compass location insights platform used by ~20 NZ councils for community planning, 8 of which deployed public-facing versions for residents. Built end-to-end and still in use today.",
+        "Re-architected FreightReserve for multi-tenancy isolated per-tenant databases for private operational data with a global identity layer for shared logins across tenants, serving ~2,000 active users at container freight stations and freight forwarders across AU.",
+        "Rebuilt the booking and timeslot engine after a race condition allowed bookings to exceed slot capacity moved enforcement fully server-side and cut the implementation from ~5,000 to ~1,000 lines, with no overbooking since.",
+        "Two developers as direct reports in a five-person team, using SvelteKit, PostgreSQL/Supabase, and Vercel.",
+        "Designed a full rework of the FreightReserve interface in Figma and currently leading its implementation across the platform",
       ],
-      margin: [0, 0, 0, 10],
+      margin: [0, 0, 0, 5],
       style: "list",
     },
 
@@ -102,7 +126,7 @@ const docDefinition: TDocumentDefinitions = {
         "Community Compass location insights platform used by ~20 NZ councils for community planning, 8 of which deployed public-facing versions for residents. Built end-to-end and still in use today.",
         "Built the HTML-to-PDF service behind The Sauce's customer reports (Express.js, Puppeteer, ~100/day) replaced browser print-to-PDF, where output varied with each user's settings, browser version and OS, with deterministic server-side rendering.",
       ],
-      margin: [0, 0, 0, 10],
+      margin: [0, 0, 0, 5],
       style: "list",
     },
 
@@ -128,7 +152,7 @@ const docDefinition: TDocumentDefinitions = {
         "Architected and shipped the company's first REST API (Python, FastAPI), enabling programmatic integrations with external data partners for the first time and bringing on 5 new partner clients.",
         "Established the company's deployment and automation platform - migrated ~20 services off manually managed Docker Compose onto Kubernetes/Helm across AWS and bare metal, and introduced Jenkins CI/CD running 50+ daily jobs company-wide.",
       ],
-      margin: [0, 0, 0, 10],
+      margin: [0, 0, 0, 5],
       style: "list",
     },
 
@@ -152,7 +176,7 @@ const docDefinition: TDocumentDefinitions = {
       ul: [
         "Contributed to an academic platform serving over 3 million users, developing features in Python using Django and Vue within established agile workflows.",
       ],
-      margin: [0, 0, 0, 15],
+      margin: [0, 0, 0, 5],
       style: "list",
     },
 
@@ -184,13 +208,13 @@ const docDefinition: TDocumentDefinitions = {
       columns: [
         {
           width: 150,
-          text: "Frameworks:",
+          text: "Frameworks & Tools:",
           style: "skillCategory",
           margin: [0, 5, 0, 0],
         },
         {
           width: "*",
-          text: "Svelte, SvelteKit, DrizzleORM, Supabase, TailwindCSS, Django, FastAPI, Vue, Express.js",
+          text: "Svelte, SvelteKit, DrizzleORM, Supabase, TailwindCSS, Django, FastAPI, Vue, Express.js, Figma",
           margin: [0, 5, 0, 0],
         },
       ],
@@ -245,7 +269,7 @@ const docDefinition: TDocumentDefinitions = {
     {
       text: "Education",
       style: "sectionHeader",
-      margin: [0, 20, 0, 5],
+      margin: [0, 10, 0, 5],
     },
     {
       canvas: [{ type: "line", x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 0.5 }],
@@ -272,18 +296,22 @@ const docDefinition: TDocumentDefinitions = {
   // Document styling
   styles: {
     name: {
-      fontSize: 20,
+      fontSize: 16,
       bold: true,
       margin: [0, 0, 0, 5],
     },
     contactInfo: {
       fontSize: 10,
-      margin: [0, 0, 0, 10],
+      margin: [0, 0, 0, 5],
+    },
+    summary: {
+      fontSize: 10,
+      lineHeight: 1.4,
     },
     sectionHeader: {
-      fontSize: 12,
+      fontSize: 11,
       bold: true,
-      margin: [0, 10, 0, 10],
+      margin: [0, 10, 0, 5],
     },
     skillCategory: {
       bold: true,
